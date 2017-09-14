@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/scripts/clock.js"></script>
+        <link rel="stylesheet" href="/styles/style.css" type="text/css"/>
+    </head>
+    <body>
+        <center>
+            <div>
+                <label id="clock_time"></label>
+            </div>
+            <div>
+                <div class="button clock_action_button" id="reset_clock">אפס</div>
+                <div class="button clock_action_button" id="stop_clock">עצור</div>
+                <div class="button clock_action_button" id="start_clock">הפעל</div>
+            </div>
+
+            <div id="target_container">
+                <div>
+                    <h1>
+                        הגדר זמן גג
+                    </h1>
+                </div>
+                <div>
+                    <input id="hourTarget" class="target_input target_text" type="number" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/> <h2 class="target_input">:</h2>
+                    <input id="minuteTarget" class="target_input target_text" type="number" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/> <h2 class="target_input">:</h2>
+                    <input id="secondTarget" class="target_input target_text" type="number" maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                    
+                </div>
+                <div>
+                    <div id="clear_target" class="target_input button target_button">בטל</div>
+                    <div id="define_target" class="target_input button target_button">הגדר</div>
+                </div>
+            </div>
+        </center>    
+    </body>
+</html>
